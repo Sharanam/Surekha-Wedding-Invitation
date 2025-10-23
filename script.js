@@ -11,6 +11,11 @@ if (id && names[0][id]) {
     if (recipientElement) {
         recipientElement.textContent = names[0][id];
     }
+} else {
+    const recipientElement = document.getElementById('recipient-name');
+    if (recipientElement) {
+        recipientElement.textContent = "સ્નેહી મહેમાન";
+    }
 }
 
 const headerAnimation = lottie.loadAnimation({
@@ -72,4 +77,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
+});
+
+
+const pageSizeScrollIndicator = document.querySelector('.page-size-scroll-indicator');
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.offsetHeight;
+    const winHeight = window.innerHeight;
+    const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+    pageSizeScrollIndicator.style.width = scrollPercent + '%';
 });
