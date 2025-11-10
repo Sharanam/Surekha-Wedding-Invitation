@@ -152,6 +152,7 @@ body {
 section.names {
 
     position: relative;
+    font-size: 1.2em;
 
     .image-container {
         display: flex;
@@ -191,7 +192,6 @@ section.names {
 
 #invitation-recipient {
     text-align: left;
-    /* width: fit-content; */
     width: fit-content;
     margin-inline: auto;
     margin-bottom: 20px;
@@ -205,6 +205,7 @@ section.names {
     color: #B22222;
     position: relative;
     text-decoration: underline;
+    font-weight: bolder;
     /* display: inline-block;
     margin-block: 0; */
     width: 100%;
@@ -295,6 +296,7 @@ section.names {
     padding: 25px;
     padding: 10px;
     display: block;
+    font-size: 1.3em;
     /* border: 2px solid #8B4513; */
     border-radius: 40px;
     /* border: 10px solid transparent;
@@ -396,7 +398,9 @@ section.names {
 
 .venue-info {
     background: rgba(255, 255, 255, 0.8);
-    padding: 30px;
+    padding-top: 20px;
+    padding-inline: 15px;
+    padding-bottom: 10px;
     border-radius: 15px;
     max-width: 600px;
     margin: 0 auto;
@@ -503,4 +507,36 @@ section.names {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+}
+
+section.venue-section {
+    padding-bottom: 4em;
+    min-height: auto;
+}
+
+h3.google-maps-link {
+    width: fit-content;
+    margin-inline: auto;
+}
+
+h3 a {
+    color: #B22222;
+    text-decoration: underline;
+    text-align: center;
+    width: fit-content;
+    margin: auto 0;
+}
+
+.self-promotion {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    color: #555;
+    min-height: auto;
+    margin-bottom: 10vh;
+
+    & a {
+        color: #B22222;
+        text-decoration: underline;
+    }
 }
